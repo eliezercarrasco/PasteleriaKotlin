@@ -67,10 +67,10 @@ fun Navbar(navController: NavController) {
                             expanded = false
                         }
                     )
-                    DropdownMenuItem(
-                        text = { Text("Login") },
+                         DropdownMenuItem(
+                        text = { Text("Registro") },
                         onClick = {
-                            navController.navigate("login")
+                            navController.navigate("registro")
                             expanded = false
                         }
                     )
