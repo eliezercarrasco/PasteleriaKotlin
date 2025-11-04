@@ -19,7 +19,7 @@ import com.example.pasteleria.components.Navbar
 import com.example.pasteleria.components.h1Style
 import com.example.pasteleria.components.pStyle
 import com.example.pasteleria.model.Usuario
-import com.example.pasteleria.utils.calcularBeneficios
+import com.example.pasteleria.model.calcularBeneficios
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -67,7 +67,10 @@ fun RegistroScreen(
             edad = edad.toIntOrNull() ?: 0,
             descuento = descuento,
             beneficios = beneficios,
-            fechaRegistro = SimpleDateFormat("dd/MM/yyyy HH:mm:ss", Locale.getDefault()).format(Date())
+            fechaRegistro = SimpleDateFormat(
+                "dd/MM/yyyy HH:mm:ss",
+                Locale.getDefault()
+            ).format(Date())
         )
 
         mensaje = buildString {
